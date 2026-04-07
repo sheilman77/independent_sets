@@ -1,0 +1,25 @@
+Files
+-----
+- tree_independent_set_verifier.cpp : C++17 source for the full verification.
+- tree_independent_set_verifier : compiled binary used for the rerun
+- tree_verify_run_summary.txt : summary output from the rerun.
+- tree_verify_run_log.txt : progress log from the rerun.
+- tree_missing_recomputed.txt : the missing values up to 1,500,000.
+Build
+-----
+g++ tree_independent_set_verifier.cpp -o tree_independent_set_verifier
+Run
+---
+./tree_independent_set_verifier 100000 1500000 tree_missing_recomputed.txt
+What it does
+------------
+1. Builds the exact rooted-state divisor DP up to 100,000.
+2. Uses the root-extension map n = 2^k A + B to cover almost all values
+up to 1,500,000.
+3. Applies an exact memoized recursive decision procedure to the 106 residual
+candidates above 100,000.
+4. Outputs the final unattainable values.
+Expected summary
+----------------
+missing_count=824
+largest_missing=88013
