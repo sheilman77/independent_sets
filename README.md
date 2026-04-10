@@ -6,7 +6,9 @@ It is conjectured that these are the only 823 positive integers with this proper
 
 For these 823 numbers, the file `verify_connected_planar_tree_missing.py` verifies that all of these integers can be written as 
 the number of independent sets of a planar graph.  And the file `verify_unicyclic_or_forest.py` verifies that all of these integers except 71, 119, 191
-and 203 can be written as the number of independent sets of a unicyclic graph or a forest (and these graphs $G=(V,E)$ satisfy $|E|/|V|\leq1$).  For the remaining four numbers:
+and 203 can be written as the number of independent sets of a unicyclic graph or a forest (and these graphs $G=(V,E)$ satisfy $|E|/|V|\leq1$).  
+
+For the remaining four numbers:
 - $C_{4}\sqcup K_{1,4}$ has $7\cdot17=119$ independent sets, and $|E|/|V|=8/9<1$
 - $C_{4}\sqcup C_{7}$ has $7\cdot 29=203$ independent sets, and $|E|/|V|=11/11=1$
 
